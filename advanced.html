@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO -->
+    <title>Mirvari - Путешествуй с друзьями по Азербайджану</title>
+    <meta name="description" content="Находи местных друзей для путешествий по Азербайджану. Познакомься с культурой через общение!">
+    <meta name="keywords" content="путешествия, Азербайджан, Баку, друзья, туризм">
+    <meta name="author" content="Mirvari Team">
+    
+    <!-- Open Graph для соцсетей -->
+    <meta property="og:title" content="Mirvari - Путешествуй с друзьями">
+    <meta property="og:description" content="Находи местных друзей для путешествий по Азербайджану">
+    <meta property="og:image" content="https://mirvari.az/images/share.jpg">
+    <meta property="og:url" content="https://mirvari.az">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+
+    <header>
+        <h1>Mirvari</h1>
+        <p>Жемчужина путешествий</p>
+    </header>
+    
+    <nav role="navigation" aria-label="Главная навигация">
+        <a href="index.html" accesskey="h">Главная</a>
+        <a href="about.html" accesskey="a">О проекте</a>
+        <a href="cities.html">Города</a>
+        <a href="register.html">Регистрация</a>
+    </nav>
+    
+    <main>
+        
+        <h1>Часто задаваемые вопросы</h1>
+        
+        <!-- Раскрывающиеся блоки -->
+        <details open>
+            <summary>Что такое Mirvari?</summary>
+            <p><strong>Mirvari</strong> (в переводе "жемчужина") — это платформа для знакомства путешественников с местными жителями Азербайджана.</p>
+        </details>
+        
+        <details>
+            <summary>Как это работает?</summary>
+            <ol>
+                <li>Зарегистрируйтесь на платформе</li>
+                <li>Укажите свой город и языки</li>
+                <li>Найдите собеседника</li>
+                <li>Договоритесь о встрече</li>
+            </ol>
+        </details>
+        
+        <details>
+            <summary>Это бесплатно?</summary>
+            <p>Да! Mirvari полностью <mark>бесплатен</mark> для всех пользователей.</p>
+        </details>
+        
+        <hr>
+        
+        <!-- Прогресс -->
+        <section>
+            <h2>Статистика платформы</h2>
+            
+            <p>Активных пользователей:</p>
+            <progress value="1250" max="2000">1250 из 2000</progress>
+            <p>1250 / 2000</p>
+            
+            <p>Средний рейтинг пользователей:</p>
+            <meter min="0" max="5" value="4.7">4.7 из 5</meter>
+            <p>4.7 / 5.0</p>
+        </section>
+        
+        <hr>
+        
+        <!-- Форма с автодополнением -->
+        <section>
+            <h2>Быстрый поиск пользователя</h2>
+            
+            <form>
+                <label for="search-city">Город:</label>
+                <input list="cities" id="search-city" name="city" placeholder="Начните вводить...">
+                
+                <datalist id="cities">
+                    <option value="Баку">
+                    <option value="Гянджа">
+                    <option value="Сумгаит">
+                    <option value="Мингячевир">
+                    <option value="Шеки">
+                    <option value="Габала">
+                    <option value="Ленкорань">
+                </datalist>
+                
+                <button type="submit">Найти</button>
+            </form>
+        </section>
+        
+        <hr>
+        
+        <!-- Контакты -->
+        <section>
+            <h2>Свяжитесь с нами</h2>
+            
+            <address>
+                <p><strong>Mirvari</strong></p>
+                <p>Email: <a href="mailto:info@mirvari.az">info@mirvari.az</a></p>
+                <p>Телефон: <a href="tel:+994501234567">+994 50 123 45 67</a></p>
+                <p>Адрес: Баку, Азербайджан</p>
+            </address>
+        </section>
+        
+        <dialog id="myDialog">
+            <h2>Добро пожаловать в Mirvari!</h2>
+            <p>Создайте профиль чтобы начать.</p>
+            <button onclick="document.getElementById('myDialog').close()">Закрыть</button>
+        </dialog>
+
+        <button onclick="document.getElementById('myDialog').showModal()">Открыть окно</button>
+        
+        <hr>
+        
+        <!-- Важная информация -->
+        <section>
+            <h2>Следующее мероприятие</h2>
+            <p>Встреча сообщества Mirvari состоится <time datetime="2026-02-14T18:00">14 февраля 2026 года в 18:00</time></p>
+        </section>
+        
+        <hr>
+        
+        <!-- Цитата -->
+        <figure>
+            <blockquote>
+                <p>Путешествие — это единственная вещь, покупая которую, становишься богаче.</p>
+            </blockquote>
+            <figcaption>— Народная мудрость</figcaption>
+        </figure>
+        
+    </main>
+    
+    <footer>
+        <p>© 2026 <abbr title="Mirvari Travel Platform">Mirvari</abbr></p>
+        <p><a href="faq.html">Ваши вопросы</a></p>
+        <p><a href="mailto:info@mirvari.az">info@mirvari.az</a></p>
+    </footer>
+
+</body>
+</html>
