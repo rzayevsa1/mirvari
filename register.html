@@ -3,63 +3,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Города Азербайджана - Mirvari</title>
+    <title>Регистрация - Mirvari</title>
 </head>
-<form>
-    <h2>Регистрация в Mirvari</h2>
+<body>
+
+    <!-- Шапка -->
+    <header>
+        <h1>Mirvari</h1>
+        <p>Находи друзей для путешествий</p>
+    </header>
     
-
-    <label for="name">Введите ваше имя:</label>
-    <input type="text" id="name" name="name" required>
-
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
-
-    <label for="password">Пароль:</label>
-    <input type="password" id="password" name="password" required>
+    <!-- Навигация -->
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="about.html">О проекте</a>
+        <a href="cities.html">Города</a>
+        <a href="register.html">Регистрация</a>
+    </nav>
     
-    <label for="city">Город:</label>
-    <select id="city" name="city" required>
-        <option value="">-- Выберите город --</option>
-        <option value="baku">Баку</option>
-        <option value="ganja">Гянджа</option>
-        <option value="sheki">Шеки</option>
-        <option value="mingacevir">Мингячевир</option>Мингячевир
-        <option value="sumgait">Сумгаит</option>
-    </select>
+    <!-- Основной контент -->
+    <main>
+        
+        <h2>Регистрация в Mirvari</h2>
+        
+        <form>
+            <!-- Имя -->
+            <label for="name">Введите ваше имя:</label>
+            <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+            <br><br>
+            
+            <!-- Email -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+            <br><br>
+            
+            <!-- Пароль -->
+            <label for="password">Пароль:</label>
+            <input type="password" id="password" name="password" placeholder="Минимум 8 символов" required>
+            <br><br>
+            
+            <!-- Город -->
+            <label for="city">Город:</label>
+            <select id="city" name="city" required>
+                <option value="">-- Выберите город --</option>
+                <option value="baku">Баку</option>
+                <option value="ganja">Гянджа</option>
+                <option value="sheki">Шеки</option>
+                <option value="mingacevir">Мингячевир</option>
+                <option value="sumgait">Сумгаит</option>
+            </select>
+            <br><br>
+            
+            <!-- Возраст -->
+            <label for="age">Возраст:</label>
+            <input type="number" id="age" name="age" min="18" max="99" placeholder="18" required>
+            <br><br>
+            
+            <!-- Пол -->
+            <p>Пол:</p>
+            <label>
+                <input type="radio" name="gender" value="male" required>
+                Мужской
+            </label>
+            <label>
+                <input type="radio" name="gender" value="female">
+                Женский
+            </label>
+            <br><br>
+            
+            <!-- Языки -->
+            <p>Какие языки знаете:</p>
+            <label>
+                <input type="checkbox" name="languages" value="russian">
+                Русский
+            </label>
+            <label>
+                <input type="checkbox" name="languages" value="english">
+                Английский
+            </label>
+            <label>
+                <input type="checkbox" name="languages" value="turkish">
+                Турецкий
+            </label>
+            <label>
+                <input type="checkbox" name="languages" value="italian">
+                Итальянский
+            </label>
+            <br><br>
+            
+            <!-- О себе -->
+            <label for="bio">Расскажите о себе:</label><br>
+            <textarea id="bio" name="bio" rows="4" cols="40" placeholder="Ваши интересы, хобби..."></textarea>
+            <br><br>
+            
+            <!-- Фото -->
+            <label for="photo">Фото профиля:</label>
+            <input type="file" id="photo" name="photo" accept="image/*">
+            <br><br>
+            
+            <!-- Кнопка -->
+            <button type="submit">Зарегистрироваться</button>
+        </form>
+        
+        <hr>
+        
+        <!-- БОНУС: Таблица с примерами пользователей -->
+        <h2>Наши пользователи</h2>
+        <p>Познакомься с теми, кто уже путешествует с Mirvari:</p>
+        
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Имя</th>
+                    <th>Город</th>
+                    <th>Языки</th>
+                    <th>Интересы</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Эльчин</td>
+                    <td>Баку</td>
+                    <td>Русский, Английский</td>
+                    <td>История, Кухня</td>
+                </tr>
+                <tr>
+                    <td>Лейла</td>
+                    <td>Гянджа</td>
+                    <td>Турецкий, Немецкий</td>
+                    <td>Природа, Фотография</td>
+                </tr>
+                <tr>
+                    <td>Айлин</td>
+                    <td>Шеки</td>
+                    <td>Итальянский, Французский</td>
+                    <td>Архитектура, Музыка</td>
+                </tr>
+                <tr>
+                    <td>Айсель</td>
+                    <td>Габала</td>
+                    <td>Английский, Испанский</td>
+                    <td>Горы, Треккинг</td>
+                </tr>
+            </tbody>
+        </table>
+        
+    </main>
+    
+    <!-- Подвал -->
+    <footer>
+        <p>© 2026 Mirvari - Путешествуй с друзьями</p>
+        <a href="mailto:info@mirvari.az">info@mirvari.az</a> | 
+        <a href="index.html">Главная</a>
+        <a href="media.html">Медиа</a>
+    </footer>
 
-    <label for="age">Возраст</label>
-    <input type="number" id="age" name="age" min="18" max="99" requiered>
-
-    <p>Пол:</p>
-    <label>
-    <input type="radio" name="gender" value="male" required>
-    Мужской
-    </label>
-    <label>
-    <input type="radio" name="gender" value="female" requiered>
-    Женский
-    </label>
-
-    <p>Какие языки знаете:</p>
-    <label>
-    <input type="checkbox" name="Languages" value="russian">
-    Русский
-    <input type="checkbox" name="Languages" value="english">
-    Английский
-    <input type="checkbox" name="Languages" value="turkish">
-    Турецкий
-    <input type="checkbox" name="Languages" value="italian">
-    Итальянский
-    </label>
-
-    <label for="bio">Расскажите о себе:</label>
-    <textarea id="bio" name="bio" rows="4" placeholder="Ваши интересы, хобби..."></textarea>
-
-    <button type="submit">Зарегестрироваться</button>
-</form>
-<footer>
-    <p>© 2026 Mirvari - Путешествуй с друзьями</p>
-    <a href="mailto:info@mirvari.az">info@mirvari.az</a>
-    <a href="index.html">Главная</a>
-</footer>
+</body>
+</html>
